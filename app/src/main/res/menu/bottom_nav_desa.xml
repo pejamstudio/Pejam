@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/t_RT"
+        android:title="Tambah RT"
+        android:icon="@drawable/inputd"
+        />
+    <item
+        android:id="@+id/d_RT"
+        android:title="Daftar RT"
+        android:icon="@drawable/list"
+        />
+    <item
+        android:id="@+id/d_warga"
+        android:title="Data Warga"
+        android:icon="@drawable/ic_action_penerima"
+        />
+    <item
+        android:id="@+id/profile_ds"
+        android:title="Profile"
+        android:icon="@drawable/prof"
+        />
+
+
+</menu>

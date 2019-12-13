@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.penerimaFragment">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/atas"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search"
+            android:padding="6dp"
+            android:background="@color/colorPrimary"
+            >
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Cari Warga"
+                    android:id="@+id/textSearch"
+                    android:backgroundTint="#fff"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    />
+                <Button
+                    android:id="@+id/btn_cari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cari"
+                    android:backgroundTint="#fff"
+                    android:layout_column="1"
+                    android:layout_row="0"/>
+            </GridLayout>
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rView"
+            android:background="#fff"
+            android:layout_below="@+id/search"/>
+    </RelativeLayout>
+</FrameLayout>

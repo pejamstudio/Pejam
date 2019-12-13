@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.tambahWargaFragment">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/atas"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="50dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Induk Kependudukan"
+                android:id="@+id/labelNIK"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_below="@+id/labelNIK"
+                android:id="@+id/getNIK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+            <TextView
+                android:layout_below="@+id/getNIK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:id="@+id/labelNama"
+                android:textStyle="bold"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/getNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelNama"/>
+            <TextView
+                android:layout_below="@+id/getNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempat Lahir"
+                android:id="@+id/labelTlahir"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/getTlahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelTlahir"
+                />
+
+            <TextView
+                android:layout_below="@+id/getTlahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir"
+                android:id="@+id/labelTgllahir"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/getTgllahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pilih Tanggal Lahir"
+                android:layout_below="@id/labelTgllahir"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="#000"/>
+
+
+            <TextView
+                android:layout_below="@+id/getTgllahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:id="@+id/labelJK"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/getJK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/labelJK"
+                android:entries="@array/jenis_kelamin"/>
+
+
+            <TextView
+                android:layout_below="@+id/getJK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:id="@+id/labelAlamat"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/getAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelAlamat"/>
+            <TextView
+                android:layout_below="@+id/getAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pekerjaan"
+                android:id="@+id/labelPekerjaan"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/getPekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelPekerjaan"/>
+
+            <TextView
+                android:layout_below="@+id/getPekerjaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Gaji"
+                android:id="@+id/labelGaji"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/getGaji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelGaji"
+                android:inputType="number"/>
+            <TextView
+                android:layout_below="@+id/getGaji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggungan Keluarga"
+                android:id="@+id/labelTanggungan"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/getTanggungan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelTanggungan"
+                android:inputType="number"/>
+            <TextView
+                android:layout_below="@+id/getTanggungan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luas Rumah"
+                android:id="@+id/labelLuas"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/getLuas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelLuas"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/tombolSimpan"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/getLuas"
+                android:text="Tambah"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:backgroundTint="@color/colorPrimary"/>
+
+        </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

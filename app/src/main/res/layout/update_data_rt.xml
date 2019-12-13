@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_below="@+id/editNIK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:id="@+id/labelNama"
+            android:textStyle="bold"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/editNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelNama"/>
+
+
+        <TextView
+            android:layout_below="@+id/editNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:id="@+id/labelJK"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/editJK"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/labelJK"
+            android:entries="@array/jenis_kelamin"/>
+        <TextView
+            android:layout_below="@+id/editJK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:id="@+id/labelAlamat"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelAlamat"/>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

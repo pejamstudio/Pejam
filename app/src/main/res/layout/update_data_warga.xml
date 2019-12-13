@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Induk Kependudukan"
+                android:id="@+id/labelNIK"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_below="@+id/labelNIK"
+                android:id="@+id/editNIK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+            <TextView
+                android:layout_below="@+id/editNIK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:id="@+id/labelNama"
+                android:textStyle="bold"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/editNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelNama"/>
+            <TextView
+                android:layout_below="@+id/editNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempat Lahir"
+                android:id="@+id/labelTlahir"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/editTlahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelTlahir"
+                />
+
+            <TextView
+                android:layout_below="@+id/editTlahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir"
+                android:id="@+id/labelTgllahir"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/editTgllahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pilih Tanggal Lahir"
+                android:layout_below="@id/labelTgllahir"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="#000"/>
+
+
+            <TextView
+                android:layout_below="@+id/editTgllahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:id="@+id/labelJK"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/editJK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/labelJK"
+                android:entries="@array/jenis_kelamin"/>
+
+
+            <TextView
+                android:layout_below="@+id/editJK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:id="@+id/labelAlamat"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/editAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelAlamat"/>
+
+
+        </RelativeLayout>
+</RelativeLayout>
