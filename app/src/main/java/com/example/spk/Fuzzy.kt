@@ -86,24 +86,24 @@ class Fuzzy {
         fkAturan[17] = minOf(gBanyak,lLuas,tBanyak)
 
 
-        indexAturan[0] = (80).toFloat()
-        indexAturan[1] = (80).toFloat()
-        indexAturan[2] = (80).toFloat()
-        indexAturan[3] = (80).toFloat()
-        indexAturan[4] = (40).toFloat()
-        indexAturan[5] = (80).toFloat()
-        indexAturan[6] = (40).toFloat()
-        indexAturan[7] = (80).toFloat()
-        indexAturan[8] = (40).toFloat()
-        indexAturan[9] = (80).toFloat()
-        indexAturan[10] = (40).toFloat()
-        indexAturan[11] = (40).toFloat()
-        indexAturan[12] = (40).toFloat()
-        indexAturan[13] = (40).toFloat()
-        indexAturan[14] = (40).toFloat()
-        indexAturan[15] = (40).toFloat()
-        indexAturan[16] = (40).toFloat()
-        indexAturan[17] = (40).toFloat()
+        indexAturan[0] = (0.8).toFloat()
+        indexAturan[1] = (0.8).toFloat()
+        indexAturan[2] = (0.8).toFloat()
+        indexAturan[3] = (0.8).toFloat()
+        indexAturan[4] = (0.4).toFloat()
+        indexAturan[5] = (0.8).toFloat()
+        indexAturan[6] = (0.4).toFloat()
+        indexAturan[7] = (0.8).toFloat()
+        indexAturan[8] = (0.4).toFloat()
+        indexAturan[9] = (0.8).toFloat()
+        indexAturan[10] = (0.4).toFloat()
+        indexAturan[11] = (0.4).toFloat()
+        indexAturan[12] = (0.4).toFloat()
+        indexAturan[13] = (0.4).toFloat()
+        indexAturan[14] = (0.4).toFloat()
+        indexAturan[15] = (0.4).toFloat()
+        indexAturan[16] = (0.4).toFloat()
+        indexAturan[17] = (0.4).toFloat()
 
 
         //defuzzifikasi
@@ -134,16 +134,16 @@ class Fuzzy {
         var selisih1 = 0F
         var selisih2 = 0F
 
-        if(dI >= 80F){
-            selisih1 = dI - 80F
-        }else if(dI < 80F){
-            selisih1 = 80F - dI
+        if(dI >= 0.8F){
+            selisih1 = dI - 0.8F
+        }else if(dI < 0.8F){
+            selisih1 = 0.8F - dI
         }
 
-        if(dI >= 40F){
-            selisih2 = dI - 40F
-        }else if(dI < 40F){
-            selisih2 = 40F - dI
+        if(dI >= 0.4F){
+            selisih2 = dI - 0.4F
+        }else if(dI < 0.4F){
+            selisih2 = 0.4F - dI
         }
         println("selisih 1 "+selisih1)
         println("selisih 2 "+selisih2)
